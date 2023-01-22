@@ -11,21 +11,43 @@
 <body>
   <section id="landing">
     <nav>
-      <a href="#landing" class="logo__link">
+      <div class="nav__container">
+        <a href="#">
           <i class="fa-solid fa-t logo"></i> <span class="logo__name">Treact</span>
-      </a>
+        </a>
+  
+        <ul class="link__list">
+          <li><a href="#" class="nav__links">About</a></li>
+          <li><a href="#" class="nav__links">Blog</a></li>
+          <li><a href="#" class="nav__links">Pricing</a></li>
+          <li><a href="#" class="nav__links">Contact Us</a></li>
+          <li><a href="#" class="nav__links">Login</a></li>
+          <li><a href="#" class="nav__links nav__link--primary">Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>  
 
-      <ul class="landing__list">
-        <li><a href="" class="landing__links">About</a></li>
-        <li><a href="" class="landing__links">Blog</a></li>
-        <li><a href="" class="landing__links">Pricing</a></li>
-        <li><a href="" class="landing__links">Contact Us</a></li>
-        <li><a href="" class="landing__links">Login</a></li>
-        <li><a href="" class="landing__links primary__link">Sign Up</a></li>
-      </ul>
-    </nav>
-    
     <header>
+      <div class="header__container">
+        <div class="header__information">
+          <h1 class="header__description">Beautiful React Templates <span class="purple">for you.</span></h1>
+          <p class="header__para">
+            Our templates are easy to setup,
+            understand and customize. Fully modular 
+            components with a variety of pages and components.
+          </p>
+
+          <input type="email" placeholder="Your E-mail Address">
+          <button class="landing__btn">Get Started</button>
+
+          <p>OUR TRUSTED CUSTOMERS</p>
+          <img src="https://treact.owaiskhan.me/static/media/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="customers">
+        </div>
+
+        <figure>
+          <img src="./assets/undraw_winter_designer_a-2-m7.svg" alt="undraw picture">
+        </figure>
+      </div>
 
     </header>
   </section>
