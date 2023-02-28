@@ -143,7 +143,7 @@ nav {
   margin-left: 40px;
   color: #243E63;
   font-weight: 500;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
   padding-bottom: 4px;
 
   transition: all 300ms ease;
@@ -886,14 +886,28 @@ nav {
 }
 
 .footer__list--info {
-  margin-bottom: 12px;
   font-size: 14px;
   font-weight: 300;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.25rem;
+
+  transition: all 300ms ease;
+}
+
+.footer__list--info:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #FFF;
 }
 
 .footer__list--title,
 .footer__list--info {
   color: #FFF;
+  border-bottom: 3px solid transparent;
+  width: none;
+}
+
+.list__decoration {
+  margin-bottom: 12px;
 }
 
 .middle__line {
@@ -954,6 +968,8 @@ nav {
 .social_media--wrapper {
   display: flex;
 }
+
+
 
 
 @media (max-width: 1279px) {
