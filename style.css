@@ -241,23 +241,17 @@ nav {
 
 /* HEADER */
 .header__information {
-  width: 100%;
+  width: 60%;
 }
 
 .header__description {
   font-size: 48px;
 }
 
-.header__para--wrapper {
-  width: 100%;
-
-}
-
 .header__para {
   margin: 24px 0;
   color: #243E63;
   width: 100%;
-  max-width: 550px;
 }
 
 .header__btn {
