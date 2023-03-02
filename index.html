@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/2919964776.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
   <title>Document</title>
 </head>
 <body>
@@ -24,7 +25,36 @@
           <li><a href="#" class="nav__links">Login</a></li>
           <li><a href="#" class="nav__links nav__link--primary">Sign Up</a></li>
         </ul>
+
+      <button class="btn__menu" onclick="openMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <div class="menu__backdrop">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <ul>
+          <li class="menu__list">
+            <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link" onclick="closeMenu()">Blog</a>
+          </li>
+          <li class="menu__list">
+            <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link" onclick="closeMenu()">Contact Us</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
+          </li>
+          
+        </ul>
       </div>
+    </div>
     </nav>  
 
     <header>
@@ -33,11 +63,13 @@
 
           <div class="header__information">
             <h1 class="header__description">Beautiful React Templates <span class="purple">for you.</span></h1>
-            <p class="header__para">
-              Our templates are easy to setup,
-              understand and customize. Fully modular 
-              components with a variety of pages and components.
-            </p>
+            <div class="header__para--wrapper">
+              <p class="header__para">
+                Our templates are easy to setup,
+                understand and customize. Fully modular 
+                components with a variety of pages and components.
+              </p>
+            </div>
             
             <div class="email__input--wrapper">
               <div class="header__input">
@@ -347,7 +379,7 @@
       </div>
     </section>
 
-    <section class="testimonials">
+    <section id="testimonials">
       <div class="container">
         <div class="row testimonial__row">
 

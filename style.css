@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1.2px;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -34,6 +35,10 @@ p {
   line-height: 1.5;
   font-size: 18px;
   color: #7C8BA1;
+}
+
+button {
+  cursor: pointer;
 }
 
 .purple {
@@ -97,6 +102,68 @@ p {
 
 
 /* LANDING */
+.btn__menu {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(36, 62, 99);
+  display: none;
+}
+
+.menu__backdrop {
+  position: fixed;
+  background-color: #FFF;
+  top: 15px;
+  left: 20px;
+  right: 20px;
+  bottom: 550px;
+  z-index: 100;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 300ms ease-in-out;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu--open .menu__backdrop {
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn__menu--close {
+  position: absolute;
+  right: 22px;
+  top: 5px;
+  padding: 8px;
+  color: rgb(36, 62, 99);
+}
+
+.menu__list {
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.menu__link {
+  color: #1a201a;
+  border-bottom: 2px solid transparent;
+  padding: 4px;
+
+  transition: all 300ms ease;
+}
+
+.menu__link:hover {
+  border-bottom: 2px solid #5011CC;
+  color: #5011CC;
+}
+
 nav {
   height: 80px;
   display: flex;
@@ -174,18 +241,23 @@ nav {
 
 /* HEADER */
 .header__information {
-  width: 60%;
+  width: 100%;
 }
 
 .header__description {
   font-size: 48px;
 }
 
+.header__para--wrapper {
+  width: 100%;
+
+}
 
 .header__para {
   margin: 24px 0;
-  display: flex;
   color: #243E63;
+  width: 100%;
+  max-width: 550px;
 }
 
 .header__btn {
@@ -907,7 +979,6 @@ nav {
 .footer__list--info {
   color: #FFF;
   border-bottom: 3px solid transparent;
-  width: none;
 }
 
 .list__decoration {
@@ -1004,6 +1075,14 @@ nav {
 
 
 @media (max-width: 1023px) {
+  .nav__links {
+    display: none;
+  }
+
+  .btn__menu {
+    display: block;
+  }
+
   .header__row {
     display: flex;
     flex-direction: column;
@@ -1035,6 +1114,7 @@ nav {
   .email__input--wrapper {
     display: flex;
     justify-content: center;
+
   }
 
   .features__example {
