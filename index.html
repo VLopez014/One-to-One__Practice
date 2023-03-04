@@ -27,12 +27,12 @@
         </ul>
 
       <button class="btn__menu" onclick="openMenu()">
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars hamburger__menu"></i>
       </button>
       
       <div class="menu__backdrop">
         <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-          <i class="fas fa-times"></i>
+          <i class="fas fa-times x__btn"></i>
         </button>
 
         <ul>
@@ -50,6 +50,9 @@
           </li>
           <li class="menu__list">
             <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
+          </li>
+          <li class="menu__list btn__list">
+            <a href="#" class="menu__link btn__link" onclick="closeMenu()">Sign Up</a>
           </li>
           
         </ul>
@@ -523,7 +526,7 @@
             Developers all over the world are happily using Treact. 
           </h5>
 
-          <div>
+          <div class="btn__wrapper">
             <button class="final__btn">Get Started</button>
             <button class="final__btn--2">Contact Us</button>
           </div>
